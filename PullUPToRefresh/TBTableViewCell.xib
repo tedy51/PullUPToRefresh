@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TBTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFa-SC-rnI">
+                        <rect key="frame" x="150" y="12" width="90" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHI-9q-Bda">
+                        <rect key="frame" x="8" y="5" width="67" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="ElE-gb-edy"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="dHI-9q-Bda" secondAttribute="bottom" constant="-5" id="Kmg-jo-nCy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WFa-SC-rnI" secondAttribute="trailing" constant="72" id="McQ-hj-vBA"/>
+                    <constraint firstItem="dHI-9q-Bda" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="P0c-ul-Sbp"/>
+                    <constraint firstItem="WFa-SC-rnI" firstAttribute="leading" secondItem="dHI-9q-Bda" secondAttribute="trailing" constant="75" id="fqo-Hi-IPA"/>
+                    <constraint firstItem="dHI-9q-Bda" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pBz-mG-Mfe"/>
+                    <constraint firstItem="WFa-SC-rnI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="x6v-Qg-kdD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WFa-SC-rnI" secondAttribute="bottom" constant="2" id="zvi-k1-QkR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="dHI-9q-Bda" id="4LX-49-nBz"/>
+                <outlet property="lable" destination="WFa-SC-rnI" id="OaD-Uw-TsO"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="353"/>
+        </tableViewCell>
+    </objects>
+</document>
